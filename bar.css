@@ -1,10 +1,10 @@
 body{
-    background-color: #bbbb;
+    background-color: rgba(231, 247, 250, 0.733);
    
 }
 
 svg{
-    background-color: burlywood;
+    background-color: rgba(231, 247, 250, 0.733);
     display: flex;
     margin-top: 10px;
     margin: auto;
@@ -13,4 +13,18 @@ svg{
 rect:hover{
     fill: rgb(129, 129, 219);
     transition: 150ms;
+}
+
+#tooltip{
+    display: flex;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    color: cornflowerblue;
+}
+
+#heading{
+    font-size: 28px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
 }

@@ -5,7 +5,7 @@ var gdpData
 
 // size of the svg we need to set
 width = '1000'
-height = '800'
+height = '600'
 padding = '40'
 
 // main 4 scales we need to make
@@ -22,7 +22,7 @@ let yAxisScale
 // making the svg
 const canverce = () =>{
     
-    d3.select('body').append('svg').attr('width',width)
+    d3.select('svg').attr('width',width)
     .attr('height', height)
     
 }
@@ -115,7 +115,9 @@ const appendBars = () => {
         tooltip.transition()
             .style('visibility', 'hidden')
         document.querySelector('#tooltip').setAttribute("data-date",item[0])
-        tooltip.text(item[0])
+        // tooltip.text(item[1])
+        tooltip.text(`${item[0]} - $${item[1]} Billion`)
+        // tooltip.text(item[1])
         // tooltip.attr('data-date',item[0]) 
         // -- this is ok. but when we use this fdd test is missing.
         

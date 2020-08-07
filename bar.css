@@ -1,0 +1,16 @@
+body{
+    background-color: #bbbb;
+   
+}
+
+svg{
+    background-color: burlywood;
+    display: flex;
+    margin-top: 10px;
+    margin: auto;
+}
+
+rect:hover{
+    fill: rgb(129, 129, 219);
+    transition: 150ms;
+}
